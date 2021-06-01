@@ -1,0 +1,237 @@
+/* custom fenix style  */
+body {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 22px;
+    color: #181818;
+    background: #000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* ************************** / / ********************* Т А Б Л И Ц Ы ********************* / / ********* ДЕСКТОП - ТАБЛИЦА table-wrap ********* /  */
+table.table-wrap {
+    text-align: center;
+    display: inline-block;
+    padding: 2rem 2rem;
+    color: #000;
+    font-size: 13px;
+}
+
+table.table-wrap {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 13px;
+}
+
+table.table-wrap tr {
+    border: 1px solid #ddd;
+    padding-bottom: 10px;
+
+}
+
+table.table-wrap th,
+table.table-wrap td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+table.table-wrap th {
+    text-transform: uppercase;
+}
+
+table.table-wrap th.lc,
+table.table-wrap td.lc {
+    /* Стиль для первой колонки */
+    text-align: left;
+}
+
+
+
+/* / ********* МОБИЛЬНЫЙ - ТАБЛИЦА table-wrap ********* /  */
+@media screen and (max-width: 800px) {
+
+    table.table-wrap {
+        border: 0;
+    }
+
+    table.table-wrap thead {
+        display: none;
+    }
+
+    table.table-wrap tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+
+    table.table-wrap td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+        border-right: 1px solid transparent;
+    }
+
+    table.table-wrap td:last-child {
+        border-bottom: 0;
+    }
+
+    table.table-wrap td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    table.table-wrap th.lc,
+    table.table-wrap td.lc {
+        /* Стиль для первой колонки */
+        text-align: right;
+    }
+
+    .text-content h2 {
+        font-size: 21px;
+        line-height: 24px;
+
+    }
+
+}
+
+/* -------------------------------- 
+
+HEADER FIXED
+
+
+header {
+
+box-sizing: border-box;
+position: fixed;
+-webkit-transition: top .3s;
+width: 100%;
+padding: 0;
+display: block;
+z-index: 99;
+top: 0;
+background: rgba(77,77,74,1);
+}
+-------------------------------- */
+/* -------------------------------- 
+
+MEGAMENU
+
+-------------------------------- */
+
+div.dropdown-menu-view-2 table.item td.left img {
+    max-width: 100%;
+    height: 200px;
+    margin: auto;
+
+}
+
+/* -------------------------------- 
+
+BREADCRUMB
+
+-------------------------------- */
+.cd-breadcrumb {
+    width: 100%;
+
+    padding: 0.5em 1em;
+    margin: 1em auto;
+    color: #ffd335;
+    background-color: #000;
+    border-radius: .25em;
+}
+
+.cd-breadcrumb:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cd-breadcrumb li {
+    display: inline-block;
+    float: left;
+    margin: 0.5em 0;
+}
+
+.cd-breadcrumb li::after {
+    /* this is the separator between items */
+    display: inline-block;
+    content: '\00bb';
+    margin: 0 .6em;
+    color: #959fa5;
+}
+
+.cd-breadcrumb li:last-of-type::after {
+    /* hide separator after the last item */
+    display: none;
+}
+
+.cd-breadcrumb li>* {
+    /* single step */
+    display: inline-block;
+    font-size: 1 rem;
+    color: #fff;
+}
+
+.cd-breadcrumb li.current>* {
+    /* selected step */
+    color: #555;
+}
+
+.custom-span {
+    font-weight: 600;
+    background: #5d5c5c7a;
+    border-radius: 5px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+div.block.first-bigblock.phoenix-firsttype-on_board {
+    background-position: center center;
+}
+/* custom fenix style  */
+/* my custom */
+.my-flex {
+    justify-content: space-around;
+}
+.my-custom-flex_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* top phone  */
+.custom-contacts-top-wrap .top-phone-custom-link,
+.custom-contacts-top-wrap .email a span {
+    color: white;
+}
+.custom-contacts-top-wrap .email a {
+    text-decoration: none;
+}
+.custom-contacts-top-wrap .top-phone-custom-link {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.my-block {
+    display: block !important;
+}
+div.block.small-block .text-content img {
+    max-width: 25%;
+}
+.custom-hight {
+    /* max-height: 400px; */
+}
+div.first-slider div.first-block div.first-block-container div.head.wow {
+    visibility: visible;
+}

@@ -1,0 +1,250 @@
+/*put your css code here*/
+.whatsUpBtn {
+	line-height: 2.8;
+    border: 2px solid #40c351;
+    padding: 8px 8px 12px 8px;
+    border-radius: 5px;
+    color: #40c351;
+}
+.whatsUpBtn:hover {
+    background: #40c351;
+    color: #fff;
+}
+.whatsUpBtn img{
+    width: 35px;
+}
+@media (max-width: 1349px) {
+    .hideWhatsUp {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .hideWhatsUp {
+        display: inline-block;
+    }
+}
+@media (max-width: 627px) {
+    .hideWhatsUp {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    .whatsUpBtn {
+        margin-top: 10px;
+    }
+    .hideWhatsUp {
+        display: inline-block;
+    }
+}
+
+/* ======================================   преимущества   ================================================= */
+    .benefits-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+		margin-bottom: 55px !important;
+    }
+
+    .benefits-list li {
+        flex-basis: 50%;
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+		margin: 0 0 20px !important;
+    }
+
+    .benefits-list img {
+		flex-shrink: 0;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .benefits-list p {
+        /* max-width: 65%; */
+        /*font-weight: 700;*/
+		color: #fff;
+    }
+
+    .benefits-btm-prgf {
+        text-align: center;
+        margin-top: 50px !important;
+    }
+
+    blockquote {
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+		background: rgb(184, 184, 184, 0.4);
+        /* background: #BCE8EA; */
+        color: #fff;
+        padding: 30px 30px 30px 90px;
+        position: relative;
+        font-family: 'Lato', sans-serif;
+        display: inline-block;
+    }
+		.advantages-quote p {
+        	margin-bottom: 0px !important;
+
+    	}
+
+    blockquote:before {
+        content: "\201C";
+        font-family: serif;
+        position: absolute;
+        top: 13px;
+        left: 16px;
+        color: #e59a05;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #f3f3f3;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    blockquote:after {
+        content: "";
+        width: 4px;
+        background: #e59a05;
+        position: absolute;
+        left: 70px;
+        top: 20px;
+        bottom: 20px;
+    }
+
+    blockquote p {
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 300;
+        font-family: 'SegoeUIRegular';
+        font-weight: 400;
+    }
+
+    blockquote cite {
+        font-style: normal;
+        text-transform: uppercase;
+    }
+    @media (max-width: 576px) {
+        .benefits-list li {
+            flex-basis: 100%;
+        }
+
+        .benefits-list {
+            padding-left: 0;
+        }
+    }
+/* ======================================   преимущества   ================================================= */
+/* style for timer*/
+ .countdown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+		margin-top: 30px;
+    } 
+    .countdown-number {
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px 0px;
+        position: relative;
+    }
+    .countdown-number:last-child {
+        margin-right: 0;
+    }
+    .countdown-number::before {
+        content: ":";
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        right: -8px;
+        color: #e59a05;
+    }
+    .countdown-number:last-child::before {
+        display: none;
+    }    
+    .countdown-time {
+        color: rgb(229, 154, 5);
+        font-size: 35px;      
+    } 
+    .countdown-text {
+        color: #fff;
+        font-size: 17px;
+    }   
+    .sub-header {
+        font-size: 27px;
+        -webkit-animation: blink1 3s linear infinite;
+        animation: blink1 3s linear infinite;
+        line-height: 1.1;
+        /*text-transform: uppercase;*/
+    }
+    @-webkit-keyframes blink1 {
+        0% { color:   rgb(229, 154, 5); }
+        50% { color:   rgb(229, 154, 5), 0; }
+        100% { color: rgb(229, 154, 5); }
+    }
+    @keyframes blink1 {
+        0% { color:   rgb(229, 154, 5); }
+        50% { color:  rgb(229, 154, 5, 0); }
+        100% { color: rgb(229, 154, 5); }
+    }
+    @media (min-width: 576px) {
+        .sub-header {
+            font-size: 42px;
+        }
+        .countdown-text {
+            font-size: 20px;
+        }
+        .countdown-time {
+            font-size: 60px;      
+        } 
+    }
+    @media (min-width: 768px) {
+        .countdown {
+            display: flex;
+        }
+    }
+/* end style for timer*/
+/* style for "Стоимость аренды"  */
+.old-price {
+    position: relative;
+    display: inline-block;
+    font-size: 23px;
+}
+.old-price::before {
+    content: "";
+    top: 45%;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255 7 7);
+    transform: rotateZ(174deg);
+}
+/* END style for "Стоимость аренды"  */
+/* timer */
+.timer-wrap {
+	margin-top: 40px;
+}
+.timer-wrap div {
+	min-width: 285px !important;
+} 
+.timer-wrap .timer-element span, .timer-wrap .timer-separator {
+	font-size: 50px !important;
+}
+.timer-wrap .timer-element span:nth-child(2) {
+	font-size: 16px !important;
+	font-family: 'HelveticaLight', Arial, 'PT Sans Caption' !important;
+}      
+@media (min-width: 576px) {
+	.timer-wrap .timer-element span, .timer-wrap .timer-separator{
+		font-size: 65px !important;
+	}
+	.timer-wrap .timer-element span:nth-child(2) {
+		font-size: 20px !important;
+	}
+}
+/* END timer */
